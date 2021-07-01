@@ -17,10 +17,16 @@
             <ColumnDefinition Width="3*"></ColumnDefinition>
             <ColumnDefinition Width="5*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel VerticalAlignment="Center" Margin="20, 0, 0, 0">
+        <StackPanel VerticalAlignment="Center" Margin="10, 0, 0, 0">
             <StackPanel Orientation="Horizontal" Margin="0">
-                <TextBlock VerticalAlignment="Center" Margin="10">Language list</TextBlock>
-                <ComboBox SelectedIndex="0" SelectionChanged="LangSelectionChanged" Width="150" Height="40" Grid.Column="0">
+                <TextBlock VerticalAlignment="Center" Margin="10" FontSize="18">Language list</TextBlock>
+                <ComboBox VerticalContentAlignment="Center" 
+                          HorizontalContentAlignment="Left" 
+                          SelectedIndex="0" 
+                          SelectionChanged="LangSelectionChanged" Width="150"
+                          Height="40" 
+                          FontSize="16"
+                          Grid.Column="0">
                     <ComboBoxItem>en</ComboBoxItem>
                     <ComboBoxItem>ru</ComboBoxItem>
                 </ComboBox>
