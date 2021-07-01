@@ -1,4 +1,4 @@
-# i18nWPF
+# i18nWPF localize
 i18n for wpf application
 
 an easy way to localize your WPF application
