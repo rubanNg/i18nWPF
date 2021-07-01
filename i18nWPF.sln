@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i18nWPF", "i18nWPF\i18nWPF.csproj", "{E94358E5-B674-42A7-8663-95D38516DBCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i18nExample", "i18nWPF\i18nExample.csproj", "{E94358E5-B674-42A7-8663-95D38516DBCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i18n", "i18n\i18n.csproj", "{56C22106-9319-4C24-A3EA-555EC8517758}"
 EndProject
