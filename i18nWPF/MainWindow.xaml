@@ -1,0 +1,41 @@
+﻿<Window x:Class="i18nWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:i18nWPF"
+        xmlns:i18n="clr-namespace:i18n;assembly=i18n"
+        mc:Ignorable="d"
+        Title="i18n Example" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center" Margin="20, 0, 0, 0">
+            <StackPanel Orientation="Horizontal" Margin="0">
+                <TextBlock VerticalAlignment="Center" Margin="10">Language list</TextBlock>
+                <ComboBox SelectedIndex="0" SelectionChanged="LangSelectionChanged" Width="150" Height="40" Grid.Column="0">
+                    <ComboBoxItem>en</ComboBoxItem>
+                    <ComboBoxItem>ru</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+            <Grid Margin="10">
+                <i18n:Translate Key="common.key.value"></i18n:Translate>
+            </Grid>
+            <Grid Margin="10">
+                <i18n:Translate Key="common.key.price"></i18n:Translate>
+            </Grid>
+            <Grid Margin="10">
+                <i18n:Translate Key="common.key.count"></i18n:Translate>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
