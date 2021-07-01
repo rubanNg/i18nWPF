@@ -26,5 +26,10 @@ namespace i18n
             var value = await config.Loader.LoadTranslate(language);
             I18nLocaleStorage.Update(language, value);
         }
+
+        static public string Translate(string key) 
+        {
+            return I18nLocaleStorage.GetKeyValue(key);
+        }
     }
 }
